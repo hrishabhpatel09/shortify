@@ -24,7 +24,7 @@ export default function Home() {
     }
     setIsSubmitting(false)
   }
-  const handleClick = (e) =>{
+  const handleClick = () =>{
     setIsCopied(true)
     window.navigator.clipboard.writeText(copyInputData);
     inputRef.current?.focus()
